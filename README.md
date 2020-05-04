@@ -1,4 +1,4 @@
-# Stick Docs
+# ![Stick Icon](./stick_small_icon.webp) Stick Docs
 
 A comprehensive and informal specification and reference of Stick programming language.
 
