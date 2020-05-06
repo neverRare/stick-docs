@@ -1,7 +1,5 @@
 # Skip
 
-Skip is a steady statement.
-
 ```stick
 __skip { STATEMENTS }
 ```
