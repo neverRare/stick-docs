@@ -8,4 +8,4 @@ alias
     to_string to_str
 ```
 
-Alias is often used in header.
+Alias is often used in prelude.

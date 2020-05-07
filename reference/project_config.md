@@ -1,6 +1,6 @@
 # Project Configuration
 
-Project configuration defines the dependencies, header, backend, entry points, and other metadata to Stick project. It should be located in the root directory of the Stick project and have file `stick_config.toml` and encoded in [toml](https://github.com/toml-lang/toml).
+Project configuration defines the dependencies, prelude, backend, entry points, and other metadata to Stick project. It should be located in the root directory of the Stick project and have file `stick_config.toml` and encoded in [toml](https://github.com/toml-lang/toml).
 
 Here's an example for a simple Stick library.
 
