@@ -2,7 +2,7 @@
 
 As Stick develops, some of the features here may be changed.
 
-## Optional significant space
+## Opt-in Significant Indentation
 
 Stick would allow either pythonic identation or braces. Notice that the return statement here starts with `=>`.
 
