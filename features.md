@@ -94,7 +94,7 @@ This is a cheaty way of providing forward compatibility for language design.
 
 ## Case-convention insensitive
 
-An identifier would interchange between `snake_case` or `camelCase`, this would only work when it starts with a lowercase character. This might break with abbreviation so we would treat it as a single word instead. For example, `parse_json` or `parseJson` but not `parseJSON`.
+Borrowed from Nim, an identifier would interchange between `snake_case` or `camelCase`, this would only work when it starts with a lowercase character. This might break with abbreviation so we would treat it as a single word instead. For example, `parse_json` or `parseJson` but not `parseJSON`.
 
 ## Very narrowed types
 
@@ -111,7 +111,7 @@ Even with annotation, it would still be narrowed.
 foo: Int = 2  -- foo have type `2`
 ```
 
-## Pretty dynamic but actually static
+## Seemingly dynamic but actually static
 
 Because values have always have narrowed type, it may not make sense that a variable is constrainted to its first inferred type as what other typed languages does.
 
