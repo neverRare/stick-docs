@@ -165,9 +165,9 @@ fn closure()
     -- foo is `Int` at this point
 ```
 
-## Numeric interval
+## Numeric range
 
-Stick have numeric interval, a numeric type that defines its minima and maxima, and it can either be integer or float. `=` means inclusive here. This is borrowed from [typescript's requested feature](https://github.com/microsoft/TypeScript/issues/15480).
+Stick have numeric range, a numeric type that defines its minima and maxima, and it can either be integer or float. `=` means inclusive here. This is borrowed from [typescript's requested feature](https://github.com/microsoft/TypeScript/issues/15480).
 
 ```stick
 i[=10..20]  -- integer from 10 to 19
@@ -178,7 +178,7 @@ f[..]  -- all float numbers
 -- stick's float is 64-bit floating point number
 ```
 
-As mentioned in [Very narrowed types](#very-narrowed-types), operation between numbers with interval type would also have result with narrowed type.
+As mentioned in [Very narrowed types](#very-narrowed-types), operation between numbers with range type would also have result with narrowed type.
 
 ```stick
 fn foo(bar: i[=0..10], baz: i[=5..10])

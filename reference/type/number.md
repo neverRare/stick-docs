@@ -1,6 +1,6 @@
 # Number
 
-Stick uses intervals to define numeric types along with union.
+Stick uses ranges to define numeric types along with union.
 
 ## Literal
 
@@ -10,9 +10,9 @@ Number literal can be used as type which will evaluate to a set with the number 
 0 | 1 | 2
 ```
 
-## Interval
+## range
 
-Intervals are used to define discrete set of integers or continuous set of numbers (floats) at certain limits. It starts with a letter indicating whether it's discrete `i` or continuous `f`. Limits are preceeded by `=` if it is inclusive. Interval can extend to infinity, this is done simply by ommiting the limit.
+ranges are used to define discrete set of integers or continuous set of numbers (floats) at certain limits. It starts with a letter indicating whether it's discrete `i` or continuous `f`. Limits are preceeded by `=` if it is inclusive. range can extend to infinity, this is done simply by ommiting the limit.
 
 ```stick
 i[=10..20]
@@ -23,7 +23,7 @@ f[..]
 
 Note that any side can't both be inclusive and extend to infinity. `i[=..=]` is disallowed.
 
-Stick internally trims both non-integral limit and exclusive limit of discrete interval.
+Stick internally trims both non-integral limit and exclusive limit of discrete range.
 
 ```stick
 i[=10..20]  -- evaluates to i[=10..=19]
@@ -32,7 +32,7 @@ i[=0.5..]  -- evaluates to i[=1..]
 
 ### Nesting
 
-Numeric types can be used as the limit itself. This includes interval and number union.
+Numeric types can be used as the limit itself. This includes range and number union.
 
 ```stick
 f[=f[=0..10]..20]  -- evaluates to f[=0..20]
