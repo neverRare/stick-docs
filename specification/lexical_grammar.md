@@ -22,6 +22,8 @@ A number literal can have underscore, and it is pretty permissive.
 
 ### String
 
+TODO
+
 ## Identifier
 
 Any string of undercore `_` and characters with letter and number unicode property is recognized as identifier. It can't start with a digit `0-9`
