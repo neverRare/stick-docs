@@ -49,17 +49,17 @@ i[=0..5 | 10]  -- evaluates to i[=0..5] then to i[=0..=4]
 ## Predefined Type Alias
 
 ```stick
-Num = f[..]
-Int = i[..]
-UInt = i[=0..]
+type Num = f[..]
+type Int = i[..]
+type UInt = i[=0..]
 
 <size S: Single & i[0..]>
-IntX = i[=-(2 ** (S - 1))..2 ** (S - 1)]
+type IntX = i[=-(2 ** (S - 1))..2 ** (S - 1)]
 
 <size S: Single & i[0..]>
-UIntX = i[=0..2 ** S]
+type UIntX = i[=0..2 ** S]
 
 -- these have internal implementation
-Floor<num: Num>
-Ceil<num: Num>
+type Floor<num: Num>
+type Ceil<num: Num>
 ```
