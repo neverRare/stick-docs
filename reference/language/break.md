@@ -14,3 +14,12 @@ fn very_loopy_function(array: [])
                 break  -- this terminates `loop`
 
 ```
+
+You can't use break to a loop when there is a nearer containing function.
+
+```stick
+loop
+    fn foo()
+        break loop -- error
+
+```
