@@ -36,7 +36,7 @@ Or we can iterate without a variable.
 ```stick
 count = 0
 
-for in persons
+for persons
     count += 1
 ```
 
