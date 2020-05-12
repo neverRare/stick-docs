@@ -10,7 +10,7 @@ for num in iterable
     result.push(num * 2)
 ```
 
-The variable is always declared, it shadows any variables with similar name declared outside it.
+The iteration variable (`num` in this example) is always declared, it shadows any variables with similar name declared outside it.
 
 ```stick
 num = "hello"
@@ -31,7 +31,7 @@ for (name, age) in persons
     greetings.push("Hello \(name)!")
 ```
 
-Or we can iterate without a variable.
+Or we can iterate without an iteration variable.
 
 ```stick
 count = 0
@@ -42,7 +42,7 @@ for persons
 
 ## Name
 
-When used with a non-unpacking variable, that variable also doubles as the name of the for loop. It can be used on `break` and `continue`.
+When used with a non-unpacking iteration variable, that variable also doubles as the name of the for loop. It can be used on `break` and `continue`.
 
 ```stick
 for num in [10, 20, 30]
@@ -52,7 +52,7 @@ for num in [10, 20, 30]
     result.push(num * 2)
 ```
 
-We could name the for loop different from its variable.
+We could name the for loop different from its iteration variable.
 
 ```stick
 for a_loop num in [10, 20, 30]
