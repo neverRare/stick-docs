@@ -5,28 +5,26 @@ Function is an expression used to define scoped snippet of code that are execute
 This section only refers to defining functions.
 
 ```stick
-sum = fn (numbers: [Num])
-    total = 0
+fn sum(numbers: [Num])
+    let total = 0
     for num in numbers
         total += num
 
     => total
 ```
 
-## Defining as statement
+## Function as expression
 
-Functions is generally an expression. In the example above, the function is defined and assigned to a variable `sum`. It can be rewritten as below, which is functionally the same.
+Functions is generally an expression. However in the example above, it is a statement and not an expression, it is similar to the following
 
 ```stick
-fn sum(numbers: [Num])
-    total = 0
+let sum = fn (numbers: [Num])
+    let total = 0
     for num in numbers
         total += num
 
     => total
 ```
-
-This form of function can't be used as expression.
 
 ## Rest Parameter
 
@@ -34,7 +32,7 @@ Rest parameter allow us to represent indefinite number of parameters as an array
 
 ```stick
 fn sum(..numbers: [Str])
-    total = 0
+    let total = 0
     for num in numbers
         total += num
 
@@ -48,8 +46,8 @@ We recommend using array instead of rest parameter as possible.
 In the example above, `=> total` is the return statement, which gives values for its calls. You can use the maybe more familiar `return` instead of the fancy `=>`.
 
 ```stick
-sum = fn (numbers: [Num])
-    total = 0
+fn sum(numbers: [Num])
+    let total = 0
     for num in numbers
         total += num
 
@@ -59,7 +57,7 @@ sum = fn (numbers: [Num])
 Return statement can also acts as early exit.
 
 ```stick
-fibonacci = fn (num: UInt) -> UInt
+fn fibonacci(num: UInt) -> UInt
     if num <= 1
         => num
 
@@ -71,7 +69,7 @@ fibonacci = fn (num: UInt) -> UInt
 The body can contain only return statement. Such function can have further simplified syntax. This is commonly referred to as lambda expression.
 
 ```stick
-square = fn (num: Num) => num * num
+fn square(num: Num) => num * num
 ```
 
 ### Void Function
@@ -81,7 +79,8 @@ Functions can be a void and will not return any value. It's calls can't be used 
 ```stick
 counter: UInt = 0
 
-increment = fn ()   counter += 1
+fn increment()
+    counter += 1
 ```
 
 Only unsteady function can be void, which is further explained at [steadiness of function](../type/steadiness.md).
