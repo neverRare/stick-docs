@@ -3,6 +3,9 @@
 Unpacking assignment is a syntactic sugar for accessing properties and assigning it to variables. This can be used for namespaces as well. Unpacking can be referred to as destructuring.
 
 ```stick
+let name
+let age
+
 joe =: (name, age)
 
 -- same as
@@ -16,6 +19,9 @@ age := joe.age
 It is possible to assign properties to variable with different name or other property.
 
 ```stick
+let his_name
+let his_age
+
 joe =:
     name his_name
     age his_age
@@ -31,6 +37,12 @@ his_age := joe.age
 With renaming, it's possible to get properties of properties.
 
 ```stick
+let length
+let width
+let height
+let brand
+let model
+
 his_car =:
     size
         length

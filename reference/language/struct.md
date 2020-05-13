@@ -3,7 +3,7 @@
 TODO
 
 ```stick
-People = struct
+struct People
     name: Str
     age: UInt
 ```

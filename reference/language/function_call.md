@@ -11,7 +11,7 @@ sum(numbers: [10, 20])
 Each argument have labels. It can be omitted by either ommiting the label and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
 
 ```stick
-power = fn (base: Num, exponent: Num) => base ** exponent
+fn power (base: Num, exponent: Num) => base ** exponent
 
 power(10, 4)
 power(:10, :4)

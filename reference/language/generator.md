@@ -3,7 +3,7 @@
 Generators are special function that returns a value and can be reentered later.
 
 ```stick
-range = gn (min: Int, max: Int)
+gn range(min: Int, max: Int)
     num = min
     while num < max
         => num

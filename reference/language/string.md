@@ -39,6 +39,6 @@ Keep note that single quoted strings don't have escape notation, it can freely u
 Double quoted strings can also interpolate via `\`.
 
 ```stick
-name = "World"
+let name = "World"
 "Hello, \(name)!"
 ```

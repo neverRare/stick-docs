@@ -9,7 +9,7 @@ Stick would allow either pythonic identation or braces. Notice that the return s
 ```stick
 -- pythonic
 fn sum(numbers: [Num])
-    total = 0
+    let total = 0
     for num in numbers
        total += num
 
@@ -17,7 +17,7 @@ fn sum(numbers: [Num])
 
 -- brace
 fn sum(numbers: [Num]) {
-    total = 0
+    let total = 0
     for num in numbers {
         total += num
     }
@@ -28,12 +28,12 @@ fn sum(numbers: [Num]) {
 This could be used with parenthesis `()` such as in function call. Notice the named arguments here.
 
 ```stick
-result = power (
+let result = power (
     base: 10
     power: 2
 )
 
-result = power
+let result = power
     base: 10
     power: 2
 ```
@@ -81,7 +81,7 @@ When aliasing a keyword, it will only work at one direction, `fn` is an alias to
 Crazily enough, keyword aliases can be shadowed by a variable.
 
 ```stick
-fn = 10
+let fn = 10
 
 -- fn is now a variable, this is syntax error
 fn stuff() {...}
@@ -101,14 +101,14 @@ Borrowed from Nim, an identifier would interchange between `snake_case` or `came
 Inspired from typescript's `as const`. Types are always narrowed down as possible. Even with operations, it would still be narrowed.
 
 ```stick
-foo = 2  -- foo have type `2`
-bar = 3 + foo  -- bar have type `5`
+let foo = 2  -- foo have type `2`
+let bar = 3 + foo  -- bar have type `5`
 ```
 
 Even with annotation, it would still be narrowed.
 
 ```stick
-foo: Int = 2  -- foo have type `2`
+let foo: Int = 2  -- foo have type `2`
 ```
 
 ## Seemingly dynamic but actually static
@@ -116,7 +116,7 @@ foo: Int = 2  -- foo have type `2`
 Because values have always have narrowed type, it may not make sense that a variable is constrainted to its first inferred type as what other typed languages does.
 
 ```stick
-foo = 20  -- foo have inferred type `20`, its always narrowed
+let foo = 20  -- foo have inferred type `20`, its always narrowed
 foo = 30
 -- if foo is constrainted to its first inferred type
 -- this is not possible as 30 is not a subtype of 20
@@ -125,7 +125,7 @@ foo = 30
 So instead, a variable can have any types, it will still be statically typed. This is inspired from rust's variable shadowing, but in stick, it will still be the same variable.
 
 ```stick
-foo = 2
+let foo = 2
 -- foo have type `2` from this point
 
 foo = 0.3
@@ -140,7 +140,7 @@ foo = [10, 20]
 This can be problematic with functions (functions are also closure in stick):
 
 ```stick
-foo = 10
+let foo = 10
 closure()
 foo = 20
 closure()
@@ -154,7 +154,7 @@ fn closure()
 When accessing variable outside the function, it needs to either be a constant (variables that remains unreassigned are inferred as constant), or have type annotation.
 
 ```stick
-foo: Int = 10
+let foo: Int = 10
 closure()
 foo = 20
 closure()
@@ -206,13 +206,13 @@ fn sum(a: A, b: B)
 Type parameters would be named. `a A` means it accepts type parameter `a` but renamed `A` on the function.
 
 ```stick
-sum<a: Int, b: Int>(...)
+sum:<a: Int, b: Int>(...)
 ```
 
 This could better narrow the types.
 
 ```stick
-result = sum(10, 5)
+let result = sum(10, 5)
 -- this is similar to
 result = sum<a: 10, b: 5>(10, 5)
 -- the result would be inferred to type 15

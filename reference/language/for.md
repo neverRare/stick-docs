@@ -3,8 +3,8 @@
 For iterates over an iterator.
 
 ```stick
-iterable = [10, 20, 30]
-result = []
+let iterable = [10, 20, 30]
+let result = []
 
 for num in iterable
     result.push(num * 2)
@@ -13,8 +13,8 @@ for num in iterable
 The iteration variable (`num` in this example) is always declared, it shadows any variables with similar name declared outside it.
 
 ```stick
-num = "hello"
-result = []
+let num = "hello"
+let result = []
 
 for num in [10, 20, 30]
     result.push(num * 2)
@@ -25,7 +25,7 @@ num  -- this is still "hello"
 We can use unpacking syntax.
 
 ```stick
-greetings = []
+let greetings = []
 
 for (name, age) in persons
     greetings.push("Hello \(name)!")
@@ -34,7 +34,7 @@ for (name, age) in persons
 Or we can iterate without an iteration variable.
 
 ```stick
-count = 0
+let count = 0
 
 for persons
     count += 1

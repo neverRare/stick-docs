@@ -3,7 +3,7 @@
 Skip is used to ignore some part of the code on runtime and on static analysis.
 
 ```stick
-name: Str
+let name: Str
 
 skip
     print("Bye")  -- this doesn't get printed
