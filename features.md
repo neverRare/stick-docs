@@ -122,7 +122,7 @@ foo = 30
 -- this is not possible as 30 is not a subtype of 20
 ```
 
-So instead, a variable can have any types, it will still be statically typed. This is inspired from rust's variable shadowing, but in stick, it will still be the same variable.
+So instead, a variable can have any types, it will still be statically typed in flow-sensitive manner. This is inspired from rust's variable shadowing, but in stick, it will still be the same variable.
 
 ```stick
 let foo = 2
