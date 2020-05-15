@@ -5,7 +5,7 @@ Skip is used to ignore some part of the code on runtime and on static analysis.
 ```stick
 let name: Str
 
-skip
+skip:
     print("Bye")  -- this doesn't get printed
     num = 42  -- still valid
 ```

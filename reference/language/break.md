@@ -5,10 +5,10 @@
 ```stick
 -- some errors aside
 
-fn very_loopy_function(array: [])
-    for i in array
-        while true
-            loop
+fn very_loopy_function(array: []):
+    for i in array:
+        while true:
+            loop:
                 break while  -- this terminates `while`
                 break i  -- this terminates a loop statement with name `i`
                 break  -- this terminates `loop`

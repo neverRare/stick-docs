@@ -25,11 +25,11 @@ elif num == 0 (0)
 else (-1)
 
 -- another multiline
-if num > 0
+if num > 0:
     1
-elif num == 0
+elif num == 0:
     0
-else
+else:
     -1
 ```
 

@@ -3,9 +3,9 @@
 Generators are special function that returns a value and can be reentered later.
 
 ```stick
-gn range(min: Int, max: Int)
+gn range(min: Int, max: Int):
     num = min
-    while num < max
+    while num < max:
         => num
         num += 1
 ```

@@ -5,10 +5,10 @@ Continue is a statement that terminates the block of statement then continues to
 ```stick
 -- some errors aside
 
-fn very_loopy_function(array: [])
-    for i in array
-        while true
-            loop
+fn very_loopy_function(array: []):
+    for i in array:
+        while true:
+            loop:
                 continue while  -- this applies to `while`
                 continue i  -- this applies to a loop statement with name `i`
                 continue  -- this applies to `loop`

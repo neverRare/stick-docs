@@ -8,7 +8,7 @@ Stick would allow either pythonic identation or braces. Notice that the return s
 
 ```stick
 -- pythonic
-fn sum(numbers: [Num])
+fn sum(numbers: [Num]):
     let total = 0
     for num in numbers
        total += num
@@ -33,18 +33,10 @@ let result = power (
     power: 2
 )
 
-let result = power
+let result = power:
     base: 10
     power: 2
 ```
-
-There should be no ambuigity. There are simple rules:
-
-- If theres `(` for function call or `{` for control flow, either on the same line or on the next line, then it is braced style, indentation won't matter.
-- Otherwise, if there's an increased indent on the next line, then it is pythonic.
-- Otherwise, there's have no block at all, for control flow, this is a syntax error.
-
-You may notice this isn't really pythonic, there's no `:` after the `fn (...)`. Should I add it? Also, should I support Ruby style?
 
 ## Omittable semicolon and comma
 
@@ -147,7 +139,7 @@ closure()
 foo = false
 closure()
 
-fn closure()
+fn closure():
     -- what is the type of foo here?
 ```
 
@@ -161,7 +153,7 @@ closure()
 foo = false  -- type error here
 closure()
 
-fn closure()
+fn closure():
     -- foo is `Int` at this point
 ```
 
@@ -181,7 +173,7 @@ f[..]  -- all float numbers
 As mentioned in [Very narrowed types](#very-narrowed-types), operation between numbers with range type would also have result with narrowed type.
 
 ```stick
-fn foo(bar: i[=0..10], baz: i[=5..10])
+fn foo(bar: i[=0..10], baz: i[=5..10]):
     -- bar is narrowed to i[=0..=9]
     -- baz is narrowed to i[=5..=9]
     => bar + baz  -- inferred to i[=5..=18]
@@ -194,12 +186,12 @@ This could prevent integer overflow, division by zero, and out of bound error.
 Every parameter would be implicitly generic.
 
 ```stick
-fn sum(a: Num, b: Num)
+fn sum(a: Num, b: Num):
     => a + b
 
 -- this becomes
 <a A: Num, b B: Num>
-fn sum(a: A, b: B)
+fn sum(a: A, b: B):
     => a + b
 ```
 
@@ -223,20 +215,20 @@ result = sum<a: 10, b: 5>(10, 5)
 Types may also be narrowed with control flows.
 
 ```stick
-fn do_something(num: Int)
-    if num == 0
+fn do_something(num: Int):
+    if num == 0:
         -- num should be `0` from this point
 ```
 
 If we have a function that mutates `num`, we will have a problem.
 
 ```stick
-fn do_something(num: Int)
-    if num == 0
+fn do_something(num: Int):
+    if num == 0:
         mutate_num()
         -- num should be `1` from this point, or is it?
 
-    fn mutate_num()
+    fn mutate_num():
         num += 1
 ```
 

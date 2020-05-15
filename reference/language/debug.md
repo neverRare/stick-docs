@@ -6,7 +6,7 @@ Debug is a statement that allows outputting in the IO without marking the neares
 from "io" =: (println)
 
 -- this function is steady, despite it causes changes in IO
-fn say_hello()
+fn say_hello():
     debug println("hello world")
     => "hello"  -- being steady, this function needs to return something
 ```

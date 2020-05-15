@@ -22,7 +22,7 @@ It is possible to assign properties to variable with different name or other pro
 let his_name
 let his_age
 
-joe =:
+joe =: :
     name his_name
     age his_age
 
@@ -43,8 +43,8 @@ let height
 let brand
 let model
 
-his_car =:
-    size
+his_car =: :
+    size:
         length
         width
         height

@@ -5,9 +5,9 @@ Function is an expression used to define scoped snippet of code that are execute
 This section only refers to defining functions.
 
 ```stick
-fn sum(numbers: [Num])
+fn sum(numbers: [Num]):
     let total = 0
-    for num in numbers
+    for num in numbers:
         total += num
 
     => total
@@ -18,9 +18,9 @@ fn sum(numbers: [Num])
 Functions is generally an expression. However in the example above, it is a statement and not an expression, it is similar to the following
 
 ```stick
-let sum = fn (numbers: [Num])
+let sum = fn (numbers: [Num]):
     let total = 0
-    for num in numbers
+    for num in numbers:
         total += num
 
     => total
@@ -31,9 +31,9 @@ let sum = fn (numbers: [Num])
 Rest parameter allow us to represent indefinite number of parameters as an array, all arguments would be unlabelled. There can't be other parameter when using this format.
 
 ```stick
-fn sum(..numbers: [Str])
+fn sum(..numbers: [Str]):
     let total = 0
-    for num in numbers
+    for num in numbers:
         total += num
 
     => total
@@ -46,9 +46,9 @@ We recommend using array instead of rest parameter as possible.
 In the example above, `=> total` is the return statement, which gives values for its calls. You can use the maybe more familiar `return` instead of the fancy `=>`.
 
 ```stick
-fn sum(numbers: [Num])
+fn sum(numbers: [Num]):
     let total = 0
-    for num in numbers
+    for num in numbers:
         total += num
 
     return total
@@ -57,8 +57,8 @@ fn sum(numbers: [Num])
 Return statement can also acts as early exit.
 
 ```stick
-fn fibonacci(num: UInt) -> UInt
-    if num <= 1
+fn fibonacci(num: UInt) -> UInt:
+    if num <= 1:
         => num
 
     => fibonacci(num - 1) + fibonacci(num - 2)

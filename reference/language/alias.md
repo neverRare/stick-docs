@@ -3,7 +3,7 @@
 Alias are used to give alias to reserved keywords and other identifiers.
 
 ```stick
-alias
+alias:
     def fn fun func function __function
     to_string to_str
 ```
