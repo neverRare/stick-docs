@@ -4,7 +4,6 @@
 
 ```stick
 __struct NAME ( PROPERTIES )
-NAME = __struct ( PROPERTIES )
 ```
 
 ## Description
