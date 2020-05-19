@@ -6,4 +6,4 @@ Currently, as incomplete as this doc is, there's no complete compiler (I'm worki
 
 ## License
 
-This documentation is licensed under CC-BY-SA-4.0. The code examples are licensed in MIT.
+This documentation is licensed under CC-BY-SA-4.0. The code snippets are licensed under MIT.
