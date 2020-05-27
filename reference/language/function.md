@@ -26,9 +26,9 @@ let sum = fn (numbers: [Num]):
     => total
 ```
 
-## Rest Parameter
+## Variadic function
 
-Rest parameter allow us to represent indefinite number of parameters as an array, all arguments would be unlabelled. There can't be other parameter when using this format.
+Variadic function allow us to represent variable number of parameters as an array, all arguments would be unlabelled. There can't be other parameter when using this format.
 
 ```stick
 fn sum(..numbers: [Str]):
@@ -39,7 +39,7 @@ fn sum(..numbers: [Str]):
     => total
 ```
 
-We recommend using array instead of rest parameter as possible.
+We recommend using array as parameter instead as possible.
 
 ## Returning a value
 
