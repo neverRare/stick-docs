@@ -89,6 +89,10 @@ Only unsteady function can be void, which is further explained at [steadiness of
 
 Often times, when using function anonymously, such as when passing it as an argument, its parameter already have inferred types. In this case, type annotations can be omitted.
 
+```stick
+let result = [1, 2, 3].map(fn value => value * 2)
+```
+
 ## Accessing outside values
 
 Functions are also closure, it can access and reassign some values outside it, but with few restrictions: only values with constrainted type and values that are assigned once can be read, and only values with constrainted type can be reassigned.
