@@ -37,7 +37,7 @@ power(base: exponent, exponent: base)
 
 The whole arguments can only be either fully unlabelled or fully labelled. We can't mix unlabelled and labelled arguments.
 
-When calling a function with rest parameter, explicit labels are not allowed, in this case, variable name isn't considered as label.
+When calling a variadic function, explicit labels are not allowed, in this case, variable name isn't considered as label.
 
 ## Statement or Expression
 
