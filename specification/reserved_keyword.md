@@ -14,7 +14,6 @@ __generator
 __if
 __for
 __namespace
-__skip
 __struct
 __let
 __in

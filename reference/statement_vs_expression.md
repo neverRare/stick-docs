@@ -14,8 +14,8 @@ Statement only:
 - enum
 - struct
 - namespace
-- void function call*
-- void method call*
+- void function call
+- void method call
 - assignment
 - type alias
 - return
@@ -23,13 +23,12 @@ Statement only:
 - continue
 - for loop
 - if statement
-- skip
 
 Expression only:
 
 - unnamed function
-- steady function*
-- steady method call*
+- steady function
+- steady method call
 - prefix method call
 - if expression
 - from
@@ -41,8 +40,6 @@ Noth Statement and Expression:
 - method call other than prefix
 - non-void unsteady function call
 - non-void unsteady method call
-
-*Enforced at static analysis, can be use as both inside skip block.
 
 ## Declaration
 
