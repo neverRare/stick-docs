@@ -243,7 +243,3 @@ Stick is backend agnostic in a way that it doesn't assume any environment or IO.
 These backend would be distributed as bytecodes which compiles the code. Being also a library, it could also expose IO functionality and other stuffs.
 
 Stick is also backend agnostic in a way that it doesn't really care about its backend, it doesn't have well-defined memory management. The target code would ideally be garbage-collected and imperative as well.
-
-## Multiple entry
-
-A stick project could have many entry, and each entry could have different backend. There may certain cases this would be useful, for example, for a stick library, it's main entry would have no backend and exposes such functionality, and it may have testing entry with a backend with output, so it could output its result.
