@@ -10,8 +10,8 @@ joe =: (name, age)
 
 -- same as
 
-name := joe.name
-age := joe.age
+name = joe.name
+age = joe.age
 ```
 
 ## Renaming
@@ -28,8 +28,8 @@ joe =: :
 
 -- same as
 
-his_name := joe.name
-his_age := joe.age
+his_name = joe.name
+his_age = joe.age
 ```
 
 ## Nesting
@@ -54,9 +54,9 @@ his_car =: :
 
 -- same as
 
-length := his_car.size.length
-width := his_car.size.width
-height := his_car.size.height
-brand := his_car.brand
-model := his_car.model
+length = his_car.size.length
+width = his_car.size.width
+height = his_car.size.height
+brand = his_car.brand
+model = his_car.model
 ```
