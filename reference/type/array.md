@@ -12,13 +12,13 @@ Array types are enclosed by square brackets `[]`. It have two optional arguments
 
 ## Element Type
 
-The first argument constraints the type of the element. It defaults to empty type `()` when omitted.
+The first argument constraints the type of the element. It defaults to type `Any` when omitted.
 
 ```stick
 [Str]  -- array of strings
 [Int]  -- array of integers
 [[Str]]  -- array of array of strings
-[]  -- array of ()
+[]  -- array of any types
 ```
 
 ## Length
