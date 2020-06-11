@@ -1,6 +1,6 @@
 # Import
 
-Import is used to unpack namespace and module.
+Import is used to unpack modules.
 
 ```stick
 import constants.pi
