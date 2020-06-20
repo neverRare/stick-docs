@@ -1,20 +1,11 @@
 # String Literals
 
-String literals are used for defining string instances. It is enclosed by `'` or `'''`, referred to as single quoted strings.
+String literals are used for defining string. It is enclosed by `"`.
 
 ```stick
-'Hello, World!'
-'''Hello, World!'''
-''  -- empty string
+"Hello, World!"
+""  -- empty string
 ```
-
-This however have limitations:
-
-- If enclosed by `'` it can't contain `'`
-- If enclosed by `'''` it can't contain `'''`
-- It can't contain newlines
-
-Strings can be alternatively enclosed with `"` or `"""`, referred to as double quoted strings. Unlike single quoted strings, these have escape notation to alleviate these limitations.
 
 ## Escape notation
 
@@ -32,13 +23,44 @@ Strings can be alternatively enclosed with `"` or `"""`, referred to as double q
 | `\uXXXX` or `\u{XXXX}` | UTF-16 code unit |
 | `\u{XXXXXXXX}`         | UTF-32 code unit |
 
-Keep note that single quoted strings don't have escape notation, it can freely use `\`.
+## Raw String
 
-## String interpolation
+Strings can be alternatively enclosed with `'`, unlike double quoted strings, these do not have escape notation. This kind of string can be referred to as raw string.
 
-Double quoted strings can also interpolate via `\`.
+You can use a number of `#` around it, it will be delimited with a matching number of `#` and `'`.
 
 ```stick
-let name = "World"
-"Hello, \(name)!"
+'raw string'
+#'raw string'#
+##'raw string'##
 ```
+
+## Multiline
+
+Strings syntaxes defined above can't contain line terminators. Theres another syntax that can span multiple lines. This works for regular string and raw string.
+
+```stick
+"""
+multiline
+string
+"""
+```
+
+The starting `"""` or `'''` must be directly preceded by indentation (or line terminator) and followed by a line terminator. It matches the next matching `"""` or `'''` with the same indentation. It cleanly trims indentation inside so it aligns with `"""`, so the following declaration.
+
+```stick
+let python_code =
+    """
+    def add(a, b):
+        return a + b
+
+    """
+```
+
+is the same as
+
+```stick
+let python_code = "def add(a, b):\n    return a + b\n"
+```
+
+TODO explain how line terminators is parsed, does CRLF remains CRLF, or is it converted to LF.
