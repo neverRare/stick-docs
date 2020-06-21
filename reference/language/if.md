@@ -4,7 +4,19 @@ If is either an expression or a statement.
 
 ## If Statement
 
-TODO
+If statements conditionally executes the body. If the condition is `true`, the body is executed, otherwise, it is skipped. It can have `else` in which the body is executed when the condition isn't `true`.
+
+```stick
+if goal >= 100:
+    println("you won!")
+
+if goal >= 100:
+    println("you won!")
+else:
+    println("better luck next time")
+```
+
+It can be chained with either `else if` or `elif`.
 
 ## If Expression
 
