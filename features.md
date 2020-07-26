@@ -105,6 +105,8 @@ let foo: Int = 2  -- foo have type `2`
 
 ## Seemingly dynamic but actually static
 
+> I'm having a little reconsideration here
+
 Because values have always have narrowed type, it may not make sense that a variable is constrainted to its first inferred type as what other typed languages does.
 
 ```stick
@@ -182,6 +184,8 @@ fn foo(bar: i[=0..10], baz: i[=5..10]):
 This could prevent integer overflow, division by zero, and out of bound error.
 
 ## Implicit generics
+
+> As well as here, I'm having reconsideration here.
 
 Every parameter would be implicitly generic.
 
