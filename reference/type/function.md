@@ -9,6 +9,8 @@ Type annotation for parameter are required unless already inferred by outside ty
 
 ## Generic
 
+TODO
+
 ## Return Type
 
 The type annotation are usually optional, return type are usually inferred.

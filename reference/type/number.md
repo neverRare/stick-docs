@@ -44,7 +44,11 @@ i[=0..5 | 10]  -- evaluates to i[=0..5] then to i[=0..=4]
 
 ## Operation
 
+TODO
+
 ## Compatibility
+
+TODO
 
 ## Predefined Type Alias
 
