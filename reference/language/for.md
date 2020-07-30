@@ -42,6 +42,8 @@ for persons:
 
 ## Name
 
+TODO this should be reconsidered with better syntax.
+
 When used with a non-unpacking iteration variable, that variable also doubles as the name of the for loop. It can be used on `break` and `continue`.
 
 ```stick
