@@ -1,5 +1,7 @@
 # Unpacking Assignment
 
+TODO add array unpacking as well
+
 Unpacking assignment is a syntactic sugar for accessing properties and assigning it to variables. This can be used for namespaces as well. Unpacking can be referred to as destructuring.
 
 ```stick
