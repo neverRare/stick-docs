@@ -3,7 +3,7 @@
 Type Any represents all types: any types is compatible with this type. This is the default constraint for generic type parameter.
 
 ```stick
-<T>  -- T is constrainted to Any, this is similar to <T: Any>
+<T>  -- T is constrained to Any, this is similar to <T: Any>
 fn wrap_in_array(x: T):
     => [x]
 ```

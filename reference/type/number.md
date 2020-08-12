@@ -12,7 +12,7 @@ Number literal can be used as type which will evaluate to a set with the number 
 
 ## range
 
-ranges are used to define discrete set of integers or continuous set of numbers (floats) at certain limits. It starts with a letter indicating whether it's discrete `i` or continuous `f`. Limits are preceeded by `=` if it is inclusive. range can extend to infinity, this is done simply by ommiting the limit.
+ranges are used to define discrete set of integers or continuous set of numbers (floats) at certain limits. It starts with a letter indicating whether it's discrete `i` or continuous `f`. Limits are preceded by `=` if it is inclusive. range can extend to infinity, this is done simply by omitting the limit.
 
 ```stick
 i[=10..20]

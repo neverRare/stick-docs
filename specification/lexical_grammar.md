@@ -4,7 +4,7 @@ Stick have simple lexical grammar and left the burden at parser.
 
 ## Whitespace
 
-Stick recognizes all characters with whitespace unicode property excluding line feed `\n` and carriage return `\r` as whitespace. However, for pythonic indentation, space `\u0020` and tab `\t` are only valid and they can't be mixed.
+Stick recognizes all characters with whitespace unicode property excluding line feed `\n` and carriage return `\r` as whitespace. However, for python-like indentation, space `\u0020` and tab `\t` are only valid and they can't be mixed.
 
 ## Line Terminators
 
@@ -26,7 +26,7 @@ TODO
 
 ## Identifier
 
-Any string of undercore `_` and characters with letter and number unicode property is recognized as identifier. It can't start with a digit `0-9`
+Any string of underscore `_` and characters with letter and number unicode property is recognized as identifier. It can't start with a digit `0-9`
 
 ## Operator
 

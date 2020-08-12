@@ -22,7 +22,7 @@ The syntax above are infix. methods with only self parameter can have prefix syn
 car.accelerate()
 ```
 
-Keep in mind that perifx method calls are not statements.
+Keep in mind that prefix method calls are not statements.
 
 ## Symbolic Methods
 

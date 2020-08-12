@@ -1,6 +1,6 @@
 # Let
 
-Let is a keyword for declaring variable, it is either a statement for declaring unitialized variable or it can be used inside assignment. This creates new variable and shadows variable with the same name before it.
+Let is a keyword for declaring variable, it is either a statement for declaring uninitialized variable or it can be used inside assignment. This creates new variable and shadows variable with the same name before it.
 
 ```stick
 let foo  -- declares foo initially without value

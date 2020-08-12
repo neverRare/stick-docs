@@ -23,7 +23,7 @@ let foo: Int
 foo = false  -- Error
 ```
 
-Definition of constraint type and assigment can be written in a single statement.
+Definition of constraint type and assignment can be written in a single statement.
 
 ```stick
 let foo: Bool = false

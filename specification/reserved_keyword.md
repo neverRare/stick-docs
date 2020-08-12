@@ -7,14 +7,12 @@ The following are reserved keyword that have functionality.
 ```stick
 __alias
 __break
-__enum
 __from
 __function
 __generator
 __if
 __for
 __namespace
-__struct
 __let
 __in
 __return

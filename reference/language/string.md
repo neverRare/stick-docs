@@ -14,7 +14,7 @@ String literals are used for defining string. It is enclosed by `"`.
 | `\"`                   | double quotation |
 | `\\`                   | backslash        |
 | `\n`                   | new line         |
-| `\r`                   | catridge return  |
+| `\r`                   | carriage return  |
 | `\t`                   | tab              |
 | `\v`                   | vertical tab     |
 | `\b`                   | backspace        |

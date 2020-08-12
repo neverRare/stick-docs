@@ -1,13 +1,13 @@
 # Implicit Generic
 
-Stick implements implicit genericity on every parameters.
+Stick implements implicit generic on every parameters.
 
 ```stick
 fn add(a: Num, b: Num):
     => a + b
 ```
 
-The example above evaltuates to below.
+The example above evaluates to below.
 
 ```stick
 <a A: Num, b B: Num>

@@ -95,6 +95,6 @@ let result = [1, 2, 3].map(fn value => value * 2)
 
 ## Accessing outside values
 
-Functions are also closure, it can access and reassign some values outside it, but with few restrictions: only values with constrainted type and values that are assigned once can be read, and only values with constrainted type can be reassigned.
+Functions are also closure, it can access and reassign some values outside it, but with few restrictions: only values with constrained type and values that are assigned once can be read, and only values with constrained type can be reassigned.
 
 ### Mutating the parameter

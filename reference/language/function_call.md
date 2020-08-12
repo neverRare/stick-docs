@@ -1,14 +1,14 @@
 # Function Call
 
-Function call or invocation executes the code inside the function. It is an expression and/or statement depending on the voidiness and [steadiness](../type/steadiness.md) of the function.
+Function call or invocation executes the code inside the function. It is an expression and/or statement depending on the voidness and [steadiness](../type/steadiness.md) of the function.
 
 ```stick
 sum(numbers: [10, 20])
 ```
 
-## Labels and Omittability
+## Labels and Optionality
 
-Each argument have labels. It can be omitted by either ommiting the label and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
+Each argument have labels. It can be omitted by either omitting the label and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
 
 ```stick
 fn power (base: Num, exponent: Num) => base ** exponent
@@ -19,7 +19,7 @@ power(:10, :4)
 power(base: 10, exponent: 4)
 ```
 
-When the variable is used as an argument without a label, the variable name will be used as a label. To truly use unlabelled arguement, prefix it with `:`.
+When the variable is used as an argument without a label, the variable name will be used as a label. To truly use unlabelled argument, prefix it with `:`.
 
 ```stick
 base = 10

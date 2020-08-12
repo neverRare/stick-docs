@@ -4,10 +4,10 @@ As Stick develops, some of the features here may be changed.
 
 ## Opt-in Significant Indentation
 
-Stick would allow either pythonic identation or braces. Notice that the return statement here starts with `=>`.
+Stick would allow either python-like indentation or braces. Notice that the return statement here starts with `=>`.
 
 ```stick
--- pythonic
+-- python-like
 fn sum(numbers: [Num]):
     let total = 0
     for num in numbers
@@ -38,7 +38,7 @@ let result = power:
     power: 2
 ```
 
-## Omittable semicolon and comma
+## Optional semicolon and comma
 
 TODO
 
@@ -54,7 +54,7 @@ alias {
 
 This would work multi-directionally, `array` is an alias to `arr` and `list`, `arr` is also an alias to `array` and `list`, and so on. This doesn't alias directly, it will only work with identifiers imported from library or from standard library, it won't alias identifiers that are immediately declared.
 
-This may cause ambuigity. My recommendation is to keep aliasing at minimum, such as `to_string` can be aliased to `to_str` but not `tos`.
+This may cause ambiguity. My recommendation is to keep aliasing at minimum, such as `to_string` can be aliased to `to_str` but not `tos`.
 
 This is maybe good for non-english languages.
 
@@ -82,7 +82,7 @@ fn stuff() {...}
 def stuff() {...}
 ```
 
-This is a cheaty way of providing forward compatibility for language design.
+This is a cheat of providing forward compatibility for language design.
 
 ## Case-convention insensitive
 
@@ -107,12 +107,12 @@ let foo: Int = 2  -- foo have type `2`
 
 > I'm having a little reconsideration here
 
-Because values have always have narrowed type, it may not make sense that a variable is constrainted to its first inferred type as what other typed languages does.
+Because values have always have narrowed type, it may not make sense that a variable is constrained to its first inferred type as what other typed languages does.
 
 ```stick
 let foo = 20  -- foo have inferred type `20`, its always narrowed
 foo = 30
--- if foo is constrainted to its first inferred type
+-- if foo is constrained to its first inferred type
 -- this is not possible as 30 is not a subtype of 20
 ```
 
@@ -145,7 +145,7 @@ fn closure():
     -- what is the type of foo here?
 ```
 
-When accessing variable outside the function, it needs to either be a constant (variables that remains unreassigned are inferred as constant), or have type annotation.
+When accessing variable outside the function, it needs to either be a constant (variables that remains un-reassigned are inferred as constant), or have type annotation.
 
 ```stick
 let foo: Int = 10
@@ -244,6 +244,6 @@ We could have restriction such as functions with side-effect can't be use as hig
 
 Stick is backend agnostic in a way that it doesn't assume any environment or IO. A stick project can choose any backend and import it like a library, or, have no backend at all, so any other project regardless of backend can use and import it.
 
-These backend would be distributed as bytecodes which compiles the code. Being also a library, it could also expose IO functionality and other stuffs.
+These backend would be distributed as byte codes which compiles the code. Being also a library, it could also expose IO functionality and other stuffs.
 
 Stick is also backend agnostic in a way that it doesn't really care about its backend, it doesn't have well-defined memory management. The target code would ideally be garbage-collected and imperative as well.
