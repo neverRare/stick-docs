@@ -10,4 +10,8 @@ this is a multiline comment
 ---
 ```
 
-TODO explain doc comments as well
+In multiline comments, the starting triple dash `---` must be preceded by an indentation (or a line terminator) and it will match the next `---` with the same indentation.
+
+## Documenting
+
+Stick doesn't have dedicated syntax for documenting comments, regular comments can be used for documenting.
