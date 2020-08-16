@@ -6,7 +6,7 @@ Method call have similar syntax to function call and property access, but it can
 car.repaint(color: "white")
 ```
 
-When the method only have 1 non-self parameter, the curve bracket `()` can be omitted. With this form, the label should also be omitted.
+When the method only have 1 non-self parameter, the curve bracket `()` can be omitted. With this form, the name should also be omitted.
 
 ```stick
 car .repaint "white"

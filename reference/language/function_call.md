@@ -6,9 +6,9 @@ Function call or invocation executes the code inside the function. It is an expr
 sum(numbers: [10, 20])
 ```
 
-## Labels and Optionality
+## Names and Optionality
 
-Each argument have labels. It can be omitted by either omitting the label and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
+Each argument have names. It can be omitted by either omitting the name and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
 
 ```stick
 fn power (base: Num, exponent: Num) => base ** exponent
@@ -19,7 +19,7 @@ power(:10, :4)
 power(base: 10, exponent: 4)
 ```
 
-When the variable is used as an argument without a label, the variable name will be used as a label. To truly use unlabelled argument, prefix it with `:`.
+When the variable is used as an argument without a name, the variable name will be used as a name. To truly use unnamed argument, prefix it with `:`.
 
 ```stick
 base = 10
@@ -35,9 +35,9 @@ power(:exponent, :base)
 power(base: exponent, exponent: base)
 ```
 
-The whole arguments can only be either fully unlabelled or fully labelled. We can't mix unlabelled and labelled arguments.
+The whole arguments can only be either fully unnamed or fully named. We can't mix unnamed and named arguments.
 
-When calling a variadic function, explicit labels are not allowed, in this case, variable name isn't considered as label.
+When calling a variadic function, explicit names are not allowed, in this case, variable name isn't considered as name.
 
 ## Statement or Expression
 

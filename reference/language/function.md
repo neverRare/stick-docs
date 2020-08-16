@@ -28,7 +28,7 @@ let sum = fn (numbers: [Num]):
 
 ## Variadic function
 
-Variadic function allow us to represent variable number of parameters as an array, all arguments would be unlabelled. There can't be other parameter when using this format.
+Variadic function allow us to represent variable number of parameters as an array, all arguments would be unnamed. There can't be other parameter when using this format.
 
 ```stick
 fn sum(..numbers: [Str]):

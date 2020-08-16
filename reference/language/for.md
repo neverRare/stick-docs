@@ -28,11 +28,11 @@ for persons:
     count += 1
 ```
 
-## Name
+## Label
 
 TODO this should be reconsidered with better syntax.
 
-When used with a non-unpacking iteration variable, that variable also doubles as the name of the for loop. It can be used on `break` and `continue`.
+When used with a non-unpacking iteration variable, that variable also doubles as the label of the for loop. It can be used on `break` and `continue`.
 
 ```stick
 for num in [10, 20, 30]:
@@ -42,7 +42,7 @@ for num in [10, 20, 30]:
     result.push(num * 2)
 ```
 
-We could name the for loop different from its iteration variable.
+We could label the for loop different from its iteration variable.
 
 ```stick
 for a_loop num in [10, 20, 30]:
@@ -52,7 +52,7 @@ for a_loop num in [10, 20, 30]:
     result.push(num * 2)
 ```
 
-We could use this for for loops with name and unpacking syntax.
+We could use this for for loops with label and unpacking syntax.
 
 ```stick
 greetings = []
