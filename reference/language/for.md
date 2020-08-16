@@ -10,19 +10,7 @@ for num in iterable:
     result.push(num * 2)
 ```
 
-The iteration variable (`num` in this example) is always declared, it shadows any variables with similar name declared outside it.
-
-```stick
-let num = "hello"
-let result = []
-
-for num in [10, 20, 30]:
-    result.push(num * 2)
-
-num  -- this is still "hello"
-```
-
-We can use unpacking syntax.
+We can use unpacking syntax. This implicitly declares variables, think of it like it have hidden `let` in it.
 
 ```stick
 let greetings = []
