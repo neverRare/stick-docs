@@ -30,8 +30,6 @@ for persons:
 
 ## Label
 
-TODO this should be reconsidered with better syntax.
-
 When used with a non-unpacking iteration variable, that variable also doubles as the label of the for loop. It can be used on `break` and `continue`.
 
 ```stick
@@ -40,26 +38,4 @@ for num in [10, 20, 30]:
         break num
 
     result.push(num * 2)
-```
-
-We could label the for loop different from its iteration variable.
-
-```stick
-for a_loop num in [10, 20, 30]:
-    if num == 20:
-        break a_loop
-
-    result.push(num * 2)
-```
-
-We could use this for for loops with label and unpacking syntax.
-
-```stick
-greetings = []
-
-for a_loop (name, age) in persons"
-    if name == "HACKER_BOI":
-        greetings.push("No, not you")
-    else:
-        greetings.push("Hello \(name)!")
 ```
