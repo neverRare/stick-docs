@@ -8,7 +8,7 @@ TODO explanation
 
 ```stick
 match name:
-    @some(let name):
+    @some let name:
         println("username found: " + name)
 
     @none:
@@ -19,7 +19,7 @@ Alternative syntax.
 
 ```stick
 match name
-case @some(let name):
+case @some let name:
     println("username found: " + name)
 
 case @none:
@@ -32,6 +32,6 @@ TODO explanation
 
 ```stick
 let score = match score:
-    @some(let score) => score + 10
+    @some let score => score + 10
     @none => 0
 ```
