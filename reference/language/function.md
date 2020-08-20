@@ -5,7 +5,7 @@ Function is an expression used to define scoped snippet of code that are execute
 This section only refers to defining functions.
 
 ```stick
-fn sum(numbers: [Num]):
+fn sum(numbers):
     let total = 0
     for num in numbers:
         total += num
@@ -18,7 +18,7 @@ fn sum(numbers: [Num]):
 Functions is generally an expression. However in the example above, it is a statement and not an expression, it is similar to the following
 
 ```stick
-let sum = fn (numbers: [Num]):
+let sum = fn (numbers):
     let total = 0
     for num in numbers:
         total += num
@@ -31,7 +31,7 @@ let sum = fn (numbers: [Num]):
 Variadic function allow us to represent variable number of parameters as an array, all arguments would be unnamed. There can't be other parameter when using this format.
 
 ```stick
-fn sum(..numbers: [Str]):
+fn sum(..numbers):
     let total = 0
     for num in numbers:
         total += num
@@ -45,19 +45,10 @@ We recommend using array as parameter instead as possible.
 
 In the example above, `=> total` is the return statement, which gives values for its calls. You can use the maybe more familiar `return` instead of the fancy `=>`.
 
-```stick
-fn sum(numbers: [Num]):
-    let total = 0
-    for num in numbers:
-        total += num
-
-    return total
-```
-
 Return statement can also acts as early exit.
 
 ```stick
-fn fibonacci(num: UInt) -> UInt:
+fn fibonacci(num):
     if num <= 1:
         => num
 
@@ -69,7 +60,7 @@ fn fibonacci(num: UInt) -> UInt:
 The body can contain only return statement. Such function can have further simplified syntax. This is commonly referred to as lambda expression.
 
 ```stick
-fn square(num: Num) => num * num
+fn square(num) => num * num
 ```
 
 ### Void Function
@@ -84,17 +75,3 @@ fn increment()
 ```
 
 Only unsteady function can be void, which is further explained at [steadiness of function](../type/steadiness.md).
-
-## Anonymous Function
-
-Often times, when using function anonymously, such as when passing it as an argument, its parameter already have inferred types. In this case, type annotations can be omitted.
-
-```stick
-let result = [1, 2, 3].map(fn value => value * 2)
-```
-
-## Accessing outside values
-
-Functions are also closure, it can access and reassign some values outside it, but with few restrictions: only values with constrained type and values that are assigned once can be read, and only values with constrained type can be reassigned.
-
-### Mutating the parameter
