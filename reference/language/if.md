@@ -1,6 +1,8 @@
 # If
 
-If is either an expression or a statement.
+If executes or evaluates a part of code according to the condition.
+
+TODO pattern matching
 
 ## If Statement
 
@@ -20,29 +22,27 @@ It can be chained with either `else if` or `elif`.
 
 ## If Expression
 
-If expression have less flexible syntax, `else` part is mandatory and each body can only be a single expression.
+If expression evaluates an expression according to the condition. It have less flexible syntax, `else` part is mandatory and each body can only be a single expression.
 
 ```stick
-if num >= 0 (num) else (-num)
+let abs = if num >= 0 (num) else (-num)
 ```
 
 If expression can be chained with `else if` or `elif` as long as there's `else` in the last.
 
 ```stick
-if num > 0 (1) elif num == 0 (0) else (-1)
+let sign = if num > 0 (1) elif num == 0 (0) else (-1)
 
 -- multiline
-if num > 0 (1)
+let sign = if num > 0 (1)
 elif num == 0 (0)
 else (-1)
 
 -- another multiline
-if num > 0:
+let sign = if num > 0:
     1
 elif num == 0:
     0
 else:
     -1
 ```
-
-If expression can't be used as statement.
