@@ -10,7 +10,7 @@ this is a multiline comment
 ---
 ```
 
-In multiline comments, the starting triple dash `---` must be preceded by an indentation (or a line terminator) and it will match the next `---` with the same indentation.
+In multiline comments, the starting triple dash `---` must be preceded by an indentation (or a line break) and it will match the next `---` with the same indentation.
 
 ## Documenting
 

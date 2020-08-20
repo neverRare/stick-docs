@@ -37,7 +37,7 @@ You can use a number of `#` around it, it will be delimited with a matching numb
 
 ## Multiline
 
-Strings syntaxes defined above can't contain line terminators. Theres another syntax that can span multiple lines. This works for regular string and raw string.
+Strings syntaxes defined above can't contain line breaks. Theres another syntax that can span multiple lines. This works for regular string and raw string.
 
 ```stick
 """
@@ -46,7 +46,7 @@ string
 """
 ```
 
-The starting `"""` or `'''` must be directly preceded by indentation (or line terminator) and followed by a line terminator. It matches the next matching `"""` or `'''` with the same indentation. It cleanly trims indentation inside so it aligns with `"""`, so the following declaration.
+The starting `"""` or `'''` must be directly preceded by indentation (or line break) and followed by a line break. It matches the next matching `"""` or `'''` with the same indentation. It cleanly trims indentation inside so it aligns with `"""`, so the following declaration.
 
 ```stick
 let python_code =
