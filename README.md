@@ -1,8 +1,11 @@
 # ![Stick Icon](./stick_small_icon.webp) Stick Docs
 
-An informal specification and reference of Stick programming language.
+An informal specification and reference of Stick programming language. Stick is still under development, and here's my goal for Stick.
 
-Currently, as incomplete as this doc is, there's no complete compiler (I'm working on it). If you're interested, I'd recommend reading [features.md](./features.md) which gives you brief look of what Stick would look like. I gotta say, its pretty ambitious and experimental (and maybe crazy).
+- Allow python-like style or brace style, even mix of it.
+- Make it capable for non-english language.
+- The compiler should infer rich types while keeping the language simple and concise.
+- It should be applicable for many kinds of project.
 
 ## License
 
