@@ -63,4 +63,4 @@ is the same as
 let python_code = "def add(a, b):\n    return a + b\n"
 ```
 
-TODO explain how line terminators is parsed, does CRLF remains CRLF, or is it converted to LF.
+For normal string, Stick recognize LF and CRLF as line breaks and they are translated as LF.
