@@ -8,6 +8,8 @@ sum(numbers: [10, 20])
 
 ## Names and Optionality
 
+> This feels overkill, must be simpler
+
 Each argument have names. It can be omitted by either omitting the name and the colon `:` or by leaving the colon in place. This will use the order of the parameter.
 
 ```stick
