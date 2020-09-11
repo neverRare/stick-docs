@@ -28,6 +28,10 @@ Keep in mind that prefix method calls are not statements.
 
 Symbolic methods are simply method with symbolic name.
 
+TODO examples
+
 ## Precedence
 
 Stick doesn't have well defined precedence, this include property access.
+
+TODO there should be a precedence definition at some place
