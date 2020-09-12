@@ -1,4 +1,4 @@
-# Controlled Side Effect
+# Side Effect Marker
 
 Function have additional type that indicates its side-effect, nicknamed as steadiness. These are implicitly inferred.
 
