@@ -19,8 +19,8 @@ String literals are used for defining string. It is enclosed by `"`.
 | `\v`                   | vertical tab     |
 | `\b`                   | backspace        |
 | `\f`                   | form feed        |
-| `\u{XX}`               | UTF-8 code unit  |
-| `\uXXXX` or `\u{XXXX}` | UTF-16 code unit |
+| `\u{XX}` or `\xXX`     | UTF-8 code unit  |
+| `\u{XXXX}` or `\uXXXX` | UTF-16 code unit |
 | `\u{XXXXXXXX}`         | UTF-32 code unit |
 
 ## Raw String
