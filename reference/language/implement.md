@@ -1,6 +1,0 @@
-# Implement
-
-TODO
-
-```stick
-```
