@@ -3,8 +3,6 @@
 Continue is a statement that terminates the block of statement then continues to the next iteration of the loop statement. When given no keyword or label, it terminates the nearest containing loop.
 
 ```stick
--- some errors aside
-
 fn very_loopy_function(array: []):
     for i in array:
         while true:

@@ -3,8 +3,6 @@
 `break` is a statement that terminates a statement, particularly a function or a loop statement. When given no keyword or label, it terminates the nearest containing function or loop.
 
 ```stick
--- some errors aside
-
 fn very_loopy_function(array: []):
     for i in array:
         while true:
