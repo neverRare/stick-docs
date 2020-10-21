@@ -34,6 +34,6 @@ Explicit return type is required for some cases when return type can't be inferr
 When functions are called, the return type is deduced even further. This is due to [implicit generic](implicit_generic.md).
 
 ```stick
-fn add(a: i[=1..5], b: i[=1..10]):
-    => add_uint(a, b)  -- this is inferred to i[=2..=13] instead of UInt
+fn add(a: i[1.<5], b: i[1.<10]):
+    => add_uint(a, b)  -- this is inferred to i[2..13] instead of UInt
 ```

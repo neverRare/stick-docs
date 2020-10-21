@@ -23,7 +23,7 @@ The first argument constraints the type of the element. It defaults to type `Any
 
 ## Length
 
-The second argument constraints the length of the array, it can be any numeric type as long as its integral and non-negative. It defaults to `UInt` or `i[=0..]` when omitted.
+The second argument constraints the length of the array, it can be any numeric type as long as its integral and non-negative. It defaults to `UInt` or `i[0..]` when omitted.
 
 ```stick
 [Str]
@@ -33,6 +33,6 @@ The second argument constraints the length of the array, it can be any numeric t
 
 [Str; 0]  -- empty array
 [Str; 10]
-[Str; i[=10..20]]
+[Str; i[10.<20]]
 [Str; 10 | 20 | 30]
 ```

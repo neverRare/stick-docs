@@ -10,7 +10,7 @@ let hello = file "./hello.txt"
 
 ## Include as bytes
 
-We can alternatively use `bytefile` which then evaluate as an array of bytes (`[UIntX<8>]` or `[i[=0..=255]]`).
+We can alternatively use `bytefile` which then evaluate as an array of bytes (`[UIntX<8>]` or `[i[0..255]]`).
 
 ```stick
 let hello_byte = bytefile "./hello.txt"
