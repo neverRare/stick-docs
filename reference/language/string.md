@@ -9,19 +9,19 @@ String literals are used for defining string. It is enclosed by `"`.
 
 ## Escape notation
 
-| Escape notation        | Output           |
-| ---------------------- | ---------------- |
-| `\"`                   | double quotation |
-| `\\`                   | backslash        |
-| `\n`                   | new line         |
-| `\r`                   | carriage return  |
-| `\t`                   | tab              |
-| `\v`                   | vertical tab     |
-| `\b`                   | backspace        |
-| `\f`                   | form feed        |
-| `\u{XX}` or `\xXX`     | UTF-8 code unit  |
-| `\u{XXXX}` or `\uXXXX` | UTF-16 code unit |
-| `\u{XXXXXXXX}`         | UTF-32 code unit |
+| Escape notation            | Output           |
+| -------------------------- | ---------------- |
+| `\"`                       | double quotation |
+| `\\`                       | backslash        |
+| `\n`                       | new line         |
+| `\r`                       | carriage return  |
+| `\t`                       | tab              |
+| `\v`                       | vertical tab     |
+| `\b`                       | backspace        |
+| `\f`                       | form feed        |
+| `\xXX`                     | UTF-8 code unit  |
+| `\uXXXX`                   | UTF-16 code unit |
+| `\u{X}` ... `\u{XXXXXXXX}` | UTF-32 code unit |
 
 ## Raw String
 
@@ -37,7 +37,7 @@ You can use a number of `#` around it, it will be delimited with a matching numb
 
 ## Multiline
 
-Strings syntaxes defined above can't contain line breaks. Theres another syntax that can span multiple lines. This works for regular string and raw string.
+Strings syntaxes defined above can't contain line breaks. Theres another syntax that can span multiple lines. This only works for regular string.
 
 ```stick
 """
@@ -46,7 +46,7 @@ string
 """
 ```
 
-The starting `"""` or `'''` must be directly preceded by indentation (or line break) and followed by a line break. It matches the next matching `"""` or `'''` with the same indentation. It cleanly trims indentation inside so it aligns with `"""`, so the following declaration.
+The starting `"""` must be directly preceded by indentation (or line break) and followed by a line break. It matches the next `"""` with the same indentation. It cleanly trims indentation inside so it aligns with `"""`, so the following declaration.
 
 ```stick
 let python_code =
@@ -63,4 +63,4 @@ is the same as
 let python_code = "def add(a, b):\n    return a + b\n"
 ```
 
-For normal string, Stick recognize LF and CRLF as line breaks and they are translated as LF.
+Stick recognize LF and CRLF as line breaks and they are translated as LF.
