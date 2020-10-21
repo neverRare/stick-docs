@@ -74,4 +74,4 @@ fn increment()
     counter += 1
 ```
 
-Only unsteady function can be void, which is further explained at [steadiness of function](../type/steadiness.md).
+Only function with effect can be void, which is further explained at [effect](../type/effect.md).

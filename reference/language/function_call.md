@@ -1,6 +1,6 @@
 # Function Call
 
-Function call or invocation executes the code inside the function. It is an expression and/or statement depending on the voidness and [steadiness](../type/steadiness.md) of the function.
+Function call or invocation executes the code inside the function. It is an expression and/or statement depending on the voidness and [effect](../type/effect.md) of the function.
 
 ```stick
 sum(numbers: [10, 20])
@@ -36,4 +36,4 @@ When calling a variadic function, explicit names are not allowed, in this case, 
 
 ## Statement or Expression
 
-Function call is only a statement when the function is void and it is only an expression when the function is [steady](../type/steadiness.md).
+Function call is only a statement when the function is void and it is only an expression when the function have [effect](../type/effect.md).
