@@ -1,6 +1,8 @@
 # ![Stick Icon](./stick_small_icon.webp) Stick Docs
 
-An informal specification and reference of Stick programming language. Stick is still under development, and here's my goal for Stick.
+> **Note:** Stick is no longer in development.
+
+An informal specification and reference of Stick programming language.
 
 - Allow python-like style or brace style, even mix of it.
 - Make it capable for non-english language.
